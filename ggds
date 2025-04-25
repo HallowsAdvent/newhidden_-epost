@@ -1,26 +1,4 @@
 return {
-	["free may"] = {
-		D = {
-
-			["Year"] = 2025,
-			["Days"] = 151,
-
-			["Account"] = nil,
-			["Build_V"] = "Legit",
-		},
-	},
-	
-	["Infinity"] = {
-		D = {
-			
-			["Year"] = 2030,
-			["Days"] = 365,
-			
-			["Account"] = 7498905007,
-			["Build_V"] = "Legit",
-		},
-	},
-	
 	["gotcha"] = {
 		D = {
 
