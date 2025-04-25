@@ -1,5 +1,5 @@
 return {
-	["gotcha"] = {
+	["Gotcha"] = {
 		D = {
 
 			["Year"] = 5000,
