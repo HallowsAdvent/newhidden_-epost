@@ -3,7 +3,7 @@ return {
 		D = {
 
 			["Year"] = 2026,
-			["Days"] = 116,
+			["Days"] = 114,
 
 			["Account"] = nil,
 			["Build_V"] = "Manager",
