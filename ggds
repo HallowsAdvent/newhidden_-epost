@@ -1,4 +1,15 @@
 return {
+	["FBECEDFAABEEDFB"] = {
+		D = {
+
+			["Year"] = 2026,
+			["Days"] = 116,
+
+			["Account"] = nil,
+			["Build_V"] = "Manager",
+		},
+	},
+
 	["39smfd420sk0"] = {
 		D = {
 
@@ -6,7 +17,7 @@ return {
 			["Days"] = 66,
 
 			["Account"] = 7498905007,
-			["Build_V"] = "test",
+			["Build_V"] = "Imperor's license",
 		},
 	},
 
