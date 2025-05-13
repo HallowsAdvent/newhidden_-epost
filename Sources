@@ -1,0 +1,114 @@
+local Modules = {}
+
+Modules.Licenses = {
+	
+	-- Paste there with start:   ["XXXX-XXXX-XXXX-XXXX"] =  ▼  {             AND DELETE THIS '▼'
+	
+	["MFMS-TSDC-VQLI-AUWH"] =    {
+		["Account"] = "N/A",
+		["Expire"] = 2611035261.028163
+	};
+	
+}; -- EVERY LICENSE MUST BE SAVED.
+
+
+
+local CreateLicense = function(Days, For)
+	local ACC = For or "N/A"
+	
+	local CurrentTick = tick()
+	local Hour = 3600
+	local Day = (Hour * 24)
+	local Adding = (Day * math.floor(Days))
+	
+	local DaysLeft = (CurrentTick + Adding)
+	local Characters = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"}
+	
+	local LicenseCode = ""	
+	
+	task.spawn(function()
+		for i = 4, 1, -1 do
+			local B = 4
+			repeat LicenseCode = LicenseCode .. Characters[math.random(1, #Characters)] B = B - 1 until B == 0 or B < 1
+			LicenseCode = LicenseCode .. tostring("-")
+		end
+		LicenseCode = string.sub(LicenseCode, 0, #LicenseCode - 1)
+	end)
+	local Preview = {}
+	Preview[LicenseCode] = {
+		Expire = DaysLeft,
+		Account = ACC,
+	}
+	print(Preview)
+end; --// CreateLicense(0, 0) 		Argument #1 = Days(Number), Argument #2 = AccountID(Number)
+
+
+local UpdateGit = function(Amount)
+	local Characters = {"A","B","C","D","E","F"}
+	local Tables = {}
+	for i = (Amount-1), 0, -1 do
+		local String = ""
+		local Local = 10
+		repeat String = String .. Characters[math.random(1, #Characters)] Local = Local - 1 
+		until Local == 0 or Local < 1
+		table.insert(Tables, String)
+	end	
+	print(Tables)
+end; --// UpdateGit(50)
+
+
+
+local T = {
+	[1] = "DFFDBCCDEF",
+	[2] = "EECBECEAFB",
+	[3] = "FACAAACCEA",
+	[4] = "EADBEECBDD",
+	[5] = "DCBACDACFA",
+	[6] = "FEEEECBEDF",
+	[7] = "DABDFCEDAB",
+	[8] = "FABCBFEBDE",
+	[9] = "CEECEFDBFB",
+	[10] = "BEBEBBFEEC",
+	[11] = "EEFBDBDFEC",
+	[12] = "AACAFFBEAD",
+	[13] = "BCFBEEDBED",
+	[14] = "ECEABCFECB",
+	[15] = "CCADEABCFB",
+	[16] = "FCDEEADFEF",
+	[17] = "ADADFAADCF",
+	[18] = "DBACBFDAFA",
+	[19] = "AEFDECADED",
+	[20] = "FCDCAACDDA",
+	[21] = "CCBCCBADDA",
+	[22] = "BBBABAEEAF",
+	[23] = "BABEABDABC",
+	[24] = "EFAEABCEAD",
+	[25] = "CBBCEEEDEA",
+	[26] = "FDBFFDEFBD",
+	[27] = "DDDADAADCC",
+	[28] = "FDEFBDFCCA",
+	[29] = "AEBABADEEF",
+	[30] = "DCAEEDBBCA",
+	[31] = "AACAFECCFF",
+	[32] = "CFBBDECABF",
+	[33] = "DFDDBAEDFA",
+	[34] = "BBDAFDEBAD",
+	[35] = "BEFBFBCAEB",
+	[36] = "ECDECFDAFD",
+	[37] = "DBEABAFDEB",
+	[38] = "ABAEAEAEAE",
+	[39] = "EECEDEDDEB",
+	[40] = "DCBDEBAAFA",
+	[41] = "CAAFCBBDEB",
+	[42] = "EEEBEFCFFE",
+	[43] = "DECFCFBBDE",
+	[44] = "CDFCDEABBD",
+	[45] = "ECADFDCEEB",
+	[46] = "CAAFBDEECA",
+	[47] = "BFBFCBDADE",
+	[48] = "DABBAFEADE",
+	[49] = "BCFCCAEBEA",
+	[50] = "EAADBEBCAD",
+}; --// Github bypassing; Update this table every publishing using function: UpdateGit(50)
+
+return Modules.Licenses
